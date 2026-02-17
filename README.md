@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Source code for 
 [https://www.youtube.com/watch?v=u8vMu7viCm8&amp;t=27s](https://www.youtube.com/watch?v=u8vMu7viCm8&t=27s)
 
+- Ctrl + Alt + I bring chat window back
 
 ## Getting Started
 

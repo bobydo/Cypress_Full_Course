@@ -126,3 +126,8 @@ You can use the [@cypress/chrome-recorder](https://github.com/cypress-io/chrome-
    ```
 
 This will generate Cypress test files from your recorded user flows and save them in the specified output directory.
+
+
+## Copilot agent generated tests for Forms Page
+- prompt: already added data-test to forms/page.jsx file could you please generate forms_ai.cy.js file?
+- check forms.cy.js for result, it passed first time

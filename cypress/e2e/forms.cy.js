@@ -22,6 +22,5 @@ describe('form tests', () => {
         cy.contains(/fail!/i).should('not.exist')
         cy.getDataTest('subscribe-button').click()
         cy.contains(/fail!/i).should('exist')
-
     })
 })
