@@ -15,6 +15,10 @@ describe('Various examples', () => {
         cy.getDataTest('nav-examples').click()
         cy.location("pathname").should("equal", "/examples")
     })
+    // Intercepts POST request.
+    // Instead of real backend, returns example.json fixture.
+    // Used for isolated frontend testing.
+    // D:\Cypress_Full_Course\cypress\fixtures
     it('intercepts', () => {
         cy.intercept("POST", 'http://localhost:3000/examples', {
             fixture: 'example.json'
@@ -31,7 +35,7 @@ describe('Various examples', () => {
         cy.getDataTest('clear-button').should('not.exist')
 
         cy.getDataTest('grudge-list-title').should('have.text', 'Add Some Grudges')
-
+        // <ul data-test="grudge-list" style={{color: 'white', listStyleType: 'none'}}>
         cy.getDataTest('grudge-input').within(() => {
             cy.get('input').type('some grudge')
         })
@@ -63,6 +67,7 @@ describe('Various examples', () => {
             cy.get('li').should('have.length', 1)
         })
 
+        cy.getDataTest('clear-button').should('exist') 
         cy.getDataTest('clear-button').click()
         cy.getDataTest('grudge-list').within(() => {
             cy.get('li').should('have.length', 0)
