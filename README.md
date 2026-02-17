@@ -9,11 +9,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm insatll
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
+```
+
+- Upgrade cypress and start
+```
+npm install cypress@latest --save-dev
+npx cypress open
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
