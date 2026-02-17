@@ -107,4 +107,22 @@ npx cypress run --record --key 158fe6c4-1562-4b75-91f7-fc414891604a
 ![1771300336096](image/ReadmeCypress/1771300336096.png)
 
 
+## Experimental: Recording User Flows with Chrome Recorder
 
+You can use the [@cypress/chrome-recorder](https://github.com/cypress-io/chrome-recorder) tool to convert Chrome DevTools Recorder user flows into Cypress tests.
+
+### Steps:
+
+1. **Install the Chrome Recorder Converter globally:**
+   ```bash
+   npm i @cypress/chrome-recorder -g
+   ```
+
+2. **Export your user flow from Chrome DevTools Recorder as a `.json` file.**
+
+3. **Convert the user flow to Cypress test code:**
+   ```bash
+   npx @cypress/chrome-recorder cypress/downloads/it_func.json -o=cypress/tests_json
+   ```
+
+This will generate Cypress test files from your recorded user flows and save them in the specified output directory.

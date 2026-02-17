@@ -1,0 +1,71 @@
+{
+    "title": "it_func",
+    "selectorAttribute": "it_func",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1341,
+            "height": 911,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "http://localhost:3000/__/#/specs/runner?file=cypress/e2e/fundamentals.cy.js",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:3000/__/#/specs/runner?file=cypress/e2e/fundamentals.cy.js",
+                    "title": "Cypress_Full_Course"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[data-test='accordion-item-2'] div.MuiAccordionSummary-content"
+                ],
+                [
+                    "xpath///*[@id=\"panel1a-header\"]/div[1]"
+                ],
+                [
+                    "pierce/[data-test='accordion-item-2'] div.MuiAccordionSummary-content"
+                ]
+            ],
+            "offsetY": 7.5,
+            "offsetX": 243.5,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[data-test='accordion-item-2'] > div.MuiCollapse-root p"
+                ],
+                [
+                    "xpath///*[@data-test=\"accordion-item-2\"]/div[2]/div/div/div/div/p"
+                ],
+                [
+                    "pierce/[data-test='accordion-item-2'] > div.MuiCollapse-root p"
+                ],
+                [
+                    "aria/Fundamental 1) Describe blocks[role=\"region\"]",
+                    "aria/[role=\"paragraph\"]"
+                ]
+            ],
+            "offsetY": 25,
+            "offsetX": 216.5,
+            "frame": [
+                0
+            ],
+            "duration": 1390.7999999970198
+        }
+    ]
+}
